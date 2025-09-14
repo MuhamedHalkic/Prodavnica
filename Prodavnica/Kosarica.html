@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./external/jquery/jquery.js"></script>
+    <script src="./jquery-validation-1.16.0/dist/jquery.validate.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Prodavnica knjiga</title>
+  </head>
+  <body onload="ucitajKosaricu()">
+    <nav id="nav">
+      <div class="container">
+        <div class="brand">
+          <a href="Pocetna.html"><h2>PRODAVNICA KNJIGA</h2></a>
+        </div>
+        <div id="Izbornik">
+          <a class="IzbornikStavka" href="Pocetna.html"
+            ><button id="pocetna">POČETNA</button></a
+          >
+          <a class="IzbornikStavka" href="Kosarica.html"
+            ><button id="kosarica-dugme">KOŠARICA<span></span></button
+          ></a>
+        </div>
+        <a id="IzbornikDugme" type="button" onclick="prikazi()">☰</a>
+      </div>
+    </nav>
+    <div class="wrapper-kosarica" id="wrapper-kosarica">
+      <table id="tabela-kosarica">
+        <thead>
+          <tr class="glavno">
+            <th>Fotografija</th>
+            <th>Naziv</th>
+            <th>Količina</th>
+            <th>Cijena</th>
+            <th>Ukloni</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div class="kosarica-dugmad"></div>
+    </div>
+    <footer id="footer"><div>© Ohran 2020</div></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
